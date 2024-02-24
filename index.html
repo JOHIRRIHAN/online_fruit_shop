@@ -31,7 +31,7 @@
       </style>
 </head>
 <body class="lato">
-    <header class="mx-32">
+    <header class="mx-5 lg:mx-20">
         <!-- nav section start -->
         <nav>
             <div>
@@ -68,10 +68,10 @@
                     <a class="btn btn-ghost normal-case text-3xl text-[#FFF]">Fruit Burst</a>
                     <div class="navbar-end">
                         <div class="form-control">
-                            <div class="input-group bg-white rounded-full hidden lg:flex">
-                              <input type="text" placeholder="Search here" class="input input-bordered" />
-                              <button class="btn btn-square">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 bg-[#fff]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="" stroke-linejoin=" " stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                            <div class="input-group bg-black rounded-[10%] hidden lg:flex">
+                              <input type="text" placeholder="Search here" class="input input-bordered"/>
+                              <button class="btn btn-square ">
+                                <i class='bx bx-search-alt-2 text-3xl '></i>
                               </button>
                             </div>
                           </div>
@@ -93,7 +93,6 @@
                           </div>
                         </div>
                       </div>
-                  
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle">❮</a> 
                     <a href="#slide2" class="btn btn-circle">❯</a>
@@ -153,27 +152,27 @@
         </div>
         <!-- banner section 2 -->
          <!-- Fruits section -->
-        <section class="mx-28">
-            <div class="grid grid-cols-5 lg:grid-cols-5 bg-white -mt-16 absolute ">
-                <div>
+        <section class=" mx-0 md:mx-16 lg:mx-12">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 bg-white -mt-5 lg:-mt-16 absolute gap-10">
+                <div class="shadow-2xl">
                     <img src="images/fruit1.png" alt="">
-                    <p class="text-base">Strawberry</p>
+                    <p class="text-base text-center">Strawberry</p>
                 </div>
-                <div>
+                <div class="shadow-2xl">
                     <img src="images/fruit2.png" alt="">
-                    <p class="text-base">Orange</p>
+                    <p class="text-base text-center">Orange</p>
                 </div>
-                <div>
+                <div class="shadow-2xl">
                     <img src="images/fruit3.png" alt="">
-                    <p class="text-base">Mango</p>
+                    <p class="text-base text-center">Mango</p>
                 </div>
-                <div>
+                <div class="shadow-2xl">
                     <img src="images/fruit4.png" alt="">
-                    <p class="text-base">Strawberry</p>
+                    <p class="text-base text-center">Strawberry</p>
                 </div>
-                <div>
+                <div class="shadow-2xl">
                     <img src="images/fruit5.png" alt="">
-                    <p class="text-base">Mango</p>
+                    <p class="text-base text-center">Mango</p>
                 </div>
             </div>
         </section>
@@ -182,10 +181,10 @@
     <main>
        
         <!-- Deal of the day section -->
-        <section class="mx-32 ">
+        <section class="mx-5 lg:mx-32 ">
             <div class="grid grid-cols-1 lg:grid-cols-2">
                 <div class="">
-                    <h3 class="mt-36 text-[#121212] text-3xl font-extrabold mb-6">Deal of the day</h3>
+                    <h3 class="mt-[25rem] lg:mt-36 text-[#121212] text-3xl font-extrabold mb-6">Deal of the day</h3>
                     <p class="mb-14 text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <div class="grid grid-flow-col gap-5 text-center auto-cols-max lg:mt-44 lg:ml-60">
@@ -216,27 +215,29 @@
                 </div>
             </div>
         </section>
-        <section class="mx-32 grid grid-cols-1 lg:grid-cols-4 gap-6">
-            <div class="card h-5/6  bg-base-100 shadow-xl mt-10">
-                <figure class="px-10 pt-10">
-                  <img src="images/fruit6.png" alt="Shoes" class="rounded-xl mb-12 mt-6" />
-                </figure>
-                <div class="card-body items-center text-center">
+
+
+        <!-- card section  -->
+
+        <section class="mx-6 lg:mx-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- card 1 -->
+          <div class="card bg-base-100 h-[500px] w-[250px] shadow-xl mt-10 border-2">
+              <figure class="px-10 pt-10">
+                  <img src="images/fruit6.png" alt="Apples" class="rounded-xl mb-12 mt-6" />
+              </figure>
+              <div class="card-body items-center text-center">
                   <h2 class="card-title mb-12 text-2xl">12.90$ - 18.85$</h2>
                   <p class="mb-6 text-[#12121299]">Apples</p>
                   <div class="rating mb-8">
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <!-- Rating stars -->
                   </div>
                   <div class="card-actions">
-                    <p class="text-[#F85559]">Details</p>
+                      <p class="text-[#F85559]">Details</p>
                   </div>
-                </div>
-            </div>
-              <div class="card h-5/6  bg-base-100 shadow-xl mt-10">
+              </div>
+          </div>
+            <!-- card 2 -->
+            <div class="card bg-base-100 h-[500px] w-[250px] shadow-xl mt-10 border-2">
                 <figure class="px-10 pt-10">
                   <img src="images/fruit7.png" alt="Shoes" class="rounded-xl mb-12 mt-6" />
                 </figure>
@@ -255,7 +256,8 @@
                   </div>
                 </div>
               </div>
-                <div class="card h-5/6  bg-base-100 shadow-xl mt-10">
+              <!-- card 3 -->
+              <div class="card bg-base-100 h-[500px] w-[250px] shadow-xl mt-10 border-2">
                 <figure class="px-10 pt-10">
                   <img src="images/fruit8.png" alt="Shoes" class="rounded-xl mb-12 mt-6" />
                 </figure>
@@ -274,7 +276,8 @@
                   </div>
                 </div>
               </div>
-                <div class="card h-5/6  bg-base-100 shadow-xl mt-10">
+              <!-- card 4 -->
+              <div class="card bg-base-100  h-[500px] w-[250px] shadow-xl mt-10 border-2">
                 <figure class="px-10 pt-10">
                   <img src="images/fruit9.png" alt="Shoes" class="rounded-xl mb-12 mt-6" />
                 </figure>
@@ -294,73 +297,77 @@
                 </div>
               </div>
         </section>
-        <section class="mx-32">
+
+        <!-- shop section  -->
+        <section class="mx-32 mt-20">
             <div class="items-center text-center">
                 <button class="btn text-[#fff] bg-[#F85559] border-0 mb-36">Shop All</button>
               </div>
         </section>
-        <section class="mx-32">
-            <div class="hero min-h-screen" style="background-image: url(images/team.png);">
-                <div class="hero-overlay bg-opacity-60"></div>
-                <div class="hero-content text-center text-neutral-content">
+        <!-- meet the team section  -->
+
+        <section class="mx-6 lg:mx-20">
+          <div class="hero min-h-screen" style="background-image: url(images/team.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
                   <div class="max-w-2xl">
-                    <h1 class="mb-5 mt-20 text-5xl font-bold text-[#FFFFFF]">Meet the team section</h1>
-                    <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                    <!-- card section -->
-                    <div class="grid col-span-1 lg:grid-cols-4 -ml-32">
-                        <div class="card w-96 ">
-                            <figure class="px-10 pt-10">
+                      <h1 class="mb-5 mt-20 text-5xl font-bold text-[#FFFFFF]">Meet the team section</h1>
+                      <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                      <!-- card section -->
+                    <div class="grid col-span-1 md:grid-cols-2 lg:grid-cols-4 ">
+                      <div class="card w-full lg:pr-40 md:w-96">
+                            <figure class=" pt-10">
                               <img src="images/member1.png" alt="Shoes" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
                               <h2 class="card-title">Awlad Hossain</h2>
                               <p>Fruits Expert</p>
                               <ul class="">
-                                <i class='bx bxl-linkedin bg-[#F85559] rounded-lg'></i>
-                                <i class='bx bxl-facebook-circle bg-[#F85559] rounded-lg' ></i>
-                                <i class='bx bxl-twitter bg-[#F85559] rounded-lg'></i>
+                                <i class='bx bxl-linkedin bg-[#F85559] rounded-lg p-1'></i>
+                                <i class='bx bxl-facebook-circle bg-[#F85559] rounded-lg p-1' ></i>
+                                <i class='bx bxl-twitter bg-[#F85559] rounded-lg p-1'></i>
                               </ul>
                             </div>
                         </div>
-                        <div class="card w-96 ">
-                            <figure class="px-10 pt-10">
+                        <div class="card w-full lg:pr-40 md:w-96">
+                            <figure class=" pt-10">
                               <img src="images/member2.png" alt="Shoes" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
                               <h2 class="card-title">Awlad Hossain</h2>
                               <p>Fruits Expert</p>
                               <ul class="">
-                                <i class='bx bxl-linkedin bg-[#F85559] rounded-lg'></i>
-                                <i class='bx bxl-facebook-circle bg-[#F85559] rounded-lg' ></i>
-                                <i class='bx bxl-twitter bg-[#F85559] rounded-lg'></i>
+                                <i class='bx bxl-linkedin bg-[#F85559] rounded-lg p-1'></i>
+                                <i class='bx bxl-facebook-circle bg-[#F85559] rounded-lg p-1' ></i>
+                                <i class='bx bxl-twitter bg-[#F85559] rounded-lg p-1'></i>
                               </ul>
                             </div>
                         </div>
-                        <div class="card w-96 ">
-                            <figure class="px-10 pt-10">
+                        <div class="card w-full lg:pr-40 md:w-96">
+                            <figure class=" pt-10">
                               <img src="images/member3.png" alt="Shoes" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
                               <h2 class="card-title">Awlad Hossain</h2>
                               <p>Fruits Expert</p>
                               <ul class="">
-                                <i class='bx bxl-linkedin bg-[#F85559] rounded-lg'></i>
-                                <i class='bx bxl-facebook-circle bg-[#F85559] rounded-lg' ></i>
-                                <i class='bx bxl-twitter bg-[#F85559] rounded-lg'></i>
+                                <i class='bx bxl-linkedin bg-[#F85559] rounded-lg p-1'></i>
+                                <i class='bx bxl-facebook-circle bg-[#F85559] rounded-lg p-1' ></i>
+                                <i class='bx bxl-twitter bg-[#F85559] rounded-lg p-1'></i>
                               </ul>
                             </div>
                         </div>
-                        <div class="card w-96">
-                            <figure class="px-10 pt-10">
+                        <div class="card w-full lg:pr-40 md:w-96">
+                            <figure class=" pt-10">
                               <img src="images/member4.png" alt="Shoes" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
                               <h2 class="card-title">Awlad Hossain</h2>
                               <p>Fruits Expert</p>
                               <ul class="">
-                                <i class='bx bxl-linkedin bg-[#F85559] rounded-lg'></i>
-                                <i class='bx bxl-facebook-circle bg-[#F85559] rounded-lg' ></i>
-                                <i class='bx bxl-twitter bg-[#F85559] rounded-lg'></i>
+                                <i class='bx bxl-linkedin bg-[#F85559] rounded-lg p-1'></i>
+                                <i class='bx bxl-facebook-circle bg-[#F85559] rounded-lg p-1' ></i>
+                                <i class='bx bxl-twitter bg-[#F85559] rounded-lg p-1'></i>
                               </ul>
                             </div>
                         </div>
@@ -370,96 +377,109 @@
                 </div>
               </div>
         </section>
-        <section class="mx-32 mt-28">
-            <div>
-                <div class="text-center">
-                <h3 class=" text-5xl font-bold">Why Choose Us</h3>
-                <p class="mb-12">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin <br> literature from 45 BC, making it over 2000 years old.</p>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-14 mb-28">
-                <!-- 1st side -->
-                <div> 
-                    <div class="flex">
-                        <img src="images/gift-box 1.svg" alt="" class="p-6 text-[#1212121A]">
-                        <div>
-                            <h2 class="text-2xl font-extrabold">Dedicated Team</h2>
-                        <hr>
-                        <p class="text-sm text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        </div>
-                    </div>
-                    <div class="flex">
-                        <img src="images/gift-box 1.svg" alt="" class="p-6 text-[#1212121A]">
-                        <div>
-                            <h2 class="text-2xl font-extrabold">Fresh is Best</h2>
-                        <hr>
-                        <p class="text-sm text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        </div>
-                    </div>
-                    <div class="flex">
-                        <img src="images/gift-box 1.svg" alt="" class="p-6 text-[#1212121A]">
-                        <div>
-                            <h2 class="text-2xl font-extrabold">Gift Certificates</h2>
-                        <hr>
-                        <p class="text-sm text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <img src="images/whychoose1.png" alt="">
-                </div>
-                <div>
-                    <div class="flex text-right">
-                        <div>
-                            <h2 class="text-2xl font-extrabold">Integrated Supplier</h2>
-                        <hr>
-                        <p class="text-sm text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        </div>
-                        <img src="images/love 1.svg" alt="" class="p-6  text-[#1212121A]">
-                    </div>
-                    <div class="flex text-right">
-                        <div>
-                            <h2 class="text-2xl font-extrabold">Sustainable Practice</h2>
-                        <hr>
-                        <p class="text-sm text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        </div>
-                        <img src="images/love 1.svg" alt="" class="p-6  text-[#1212121A]">
-                    </div>
-                    <div class="flex text-right">
-                        <div>
-                            <h2 class="text-2xl font-extrabold">The Benefits Only</h2>
-                        <hr>
-                        <p class="text-sm text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        </div>
-                        <img src="images/love 1.svg" alt="" class="p-6  text-[#1212121A]">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer footer-center  bg-[#121212] text-base-content rounded lg:pt-20  lg:pb-20 w-auto ">
-        <div class="flex "> 
-          <img src="images/logo.png" alt=""> <h3 class="text-4xl font-bold text-white">Fruit Burst</h3>
-        </div>
-        <nav class="grid grid-flow-col gap-4 lg:gap-16 text-white font-semibold">
-          <a class="link link-hover ">Home</a> 
-          <a class="link link-hover ">Home</a> 
-          <a class="link link-hover ">About Us</a> 
-          <a class="link link-hover ">Shop</a> 
-          <a class="link link-hover ">All Fruits</a>
-          <a class="link link-hover ">Support</a>
-          <a class="link link-hover ">My Account</a>
-        </nav> 
-        <nav class="text-white ">
-          <div class="grid grid-flow-col gap-2 lg:gap-10">
-            <a><i class='bx bxl-twitter text-3xl'></i></a> 
-            <a><i class='bx bxl-facebook-circle text-3xl'></i></a> 
-            <a><i class='bx bxl-youtube text-3xl'></i></a>
-            <a><i class='bx bxl-linkedin text-3xl'></i></a> 
-            <a><i class='bx bxl-instagram-alt text-3xl' ></i></a> 
-            <a><i class='bx bxl-apple text-3xl'></i></a>
+
+
+        <!-- why choice us section  -->
+        <section class="mx-6 lg:mx-20 mt-12 lg:mt-28">
+          <div class="text-center lg:text-left">
+              <h3 class="text-3xl lg:text-5xl font-bold text-center">Why Choose Us</h3>
+              <p class="mb-6 lg:mb-12 text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin <br> literature from 45 BC, making it over 2000 years old.</p>
           </div>
-        </nav>
-      </footer>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-14 mb-10 lg:mb-28">
+              <!-- 1st side -->
+              <div class="flex flex-col justify-center items-center lg:items-start">
+                  <!-- Card 1 -->
+                  <div class="flex items-center">
+                      <img src="images/gift-box 1.svg" alt="" class="p-4 lg:p-6 text-[#1212121A]">
+                      <div>
+                          <h2 class="text-xl lg:text-2xl font-extrabold">Dedicated Team</h2>
+                          <hr class="hidden lg:block">
+                          <p class="text-xs lg:text-sm text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      </div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="flex items-center mt-6">
+                      <img src="images/gift-box 1.svg" alt="" class="p-4 lg:p-6 text-[#1212121A]">
+                      <div>
+                          <h2 class="text-xl lg:text-2xl font-extrabold">Fresh is Best</h2>
+                          <hr class="hidden lg:block">
+                          <p class="text-xs lg:text-sm text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      </div>
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="flex items-center mt-6">
+                      <img src="images/gift-box 1.svg" alt="" class="p-4 lg:p-6 text-[#1212121A]">
+                      <div>
+                          <h2 class="text-xl lg:text-2xl font-extrabold">Gift Certificates</h2>
+                          <hr class="hidden lg:block">
+                          <p class="text-xs lg:text-sm text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Image -->
+              <div class="">
+                  <img class="mx-0 md:mx-28 lg:mx-0" src="images/whychoose1.png" alt="">
+              </div>
+              <!-- 3rd side -->
+              <div class="flex flex-col justify-center items-center lg:items-end">
+                  <!-- Card 1 -->
+                  <div class="flex items-center lg:text-right">
+                      <div>
+                          <h2 class="text-xl lg:text-2xl font-extrabold">Integrated Supplier</h2>
+                          <hr class="hidden lg:block">
+                          <p class="text-xs lg:text-sm text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      </div>
+                      <img src="images/love 1.svg" alt="" class="p-4 lg:p-6 text-[#1212121A]">
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="flex items-center mt-6 lg:text-right">
+                      <div>
+                          <h2 class="text-xl lg:text-2xl font-extrabold">Sustainable Practice</h2>
+                          <hr class="hidden lg:block">
+                          <p class="text-xs lg:text-sm text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      </div>
+                      <img src="images/love 1.svg" alt="" class="p-4 lg:p-6 text-[#1212121A]">
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="flex items-center mt-6 lg:text-right">
+                      <div>
+                          <h2 class="text-xl lg:text-2xl font-extrabold">The Benefits Only</h2>
+                          <hr class="hidden lg:block">
+                          <p class="text-xs lg:text-sm text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      </div>
+                      <img src="images/love 1.svg" alt="" class="p-4 lg:p-6 text-[#1212121A]">
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+    </main>
+    <!-- footer section  -->
+
+<footer class="footer footer-center bg-[#121212] text-base-content rounded pt-10 lg:pt-20 pb-10 lg:pb-20">
+    <div class="flex items-center justify-center lg:justify-start">
+        <img src="images/logo.png" alt="" class="h-12 lg:h-auto">
+        <h3 class="text-2xl lg:text-4xl font-bold text-white ml-2 lg:ml-4">Fruit Burst</h3>
+    </div>
+    <nav class="grid grid-cols-1 lg:grid-cols-6 gap-4 lg:gap-16 text-white font-semibold mt-4 lg:mt-8">
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">Shop</a>
+        <a class="link link-hover">All Fruits</a>
+        <a class="link link-hover">Support</a>
+        <a class="link link-hover">My Account</a>
+    </nav>
+    <nav class="text-white mt-4 lg:mt-8">
+        <div class="grid grid-flow-col gap-2 lg:gap-10">
+            <a><i class='bx bxl-twitter text-2xl lg:text-3xl'></i></a>
+            <a><i class='bx bxl-facebook-circle text-2xl lg:text-3xl'></i></a>
+            <a><i class='bx bxl-youtube text-2xl lg:text-3xl'></i></a>
+            <a><i class='bx bxl-linkedin text-2xl lg:text-3xl'></i></a>
+            <a><i class='bx bxl-instagram-alt text-2xl lg:text-3xl'></i></a>
+            <a><i class='bx bxl-apple text-2xl lg:text-3xl'></i></a>
+        </div>
+    </nav>
+</footer>
+
 </body>
 </html>
